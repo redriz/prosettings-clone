@@ -25,6 +25,10 @@ input {
     font-weight: 600;
 }
 
+::-webkit-search-cancel-button {
+    display: none;
+}
+
 body>header {
     display: flex;
     align-items: center;
@@ -112,7 +116,7 @@ nav>ul>li>button:hover {
     background-color: #f1f1f1;
 }
 
-.search-bar {
+.search-bar form {
     display: flex;
     align-items: center;
     background-color: #f1f1f1;
@@ -120,7 +124,7 @@ nav>ul>li>button:hover {
     min-height: 38px;
 }
 
-.search-bar button {
+.search-bar form button {
     display: flex;
     background-color: #f1f1f1;
     border: none;
@@ -205,18 +209,39 @@ nav>ul>li>button:hover {
     font-size: 16px;
 }
 
+:has(#search-hero:focus) .hero-search form {
+    outline: 1px solid #d4d4d4;
+}
+
 .hero-search {
+    display: block;
+    position: relative;
+    margin-top: 48px;
+}
+
+.hero-search form {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
-.hero-search button {
+.hero-search ::after {
+    content: '';
+    position: absolute;
+    right: 69px;
+    top: calc(50% - 14px);
+    width: 1px;
+    height: 28px;
+    background: rgba(22, 24, 35, 0.12);
+}
+
+.hero-search form button {
     display: flex;
-    width: 60px;
+    width: 73px;
     min-height: 60px;
     border-radius: 0 9px 9px 0;
-    padding: 18px;
+    padding: 24px;
 }
 
 .hero-services {
@@ -238,6 +263,8 @@ nav>ul>li>button:hover {
     gap: 20px;
     color: #727272;
     cursor: pointer;
+    height: 80px;
+    transition: all 0.2s;
 }
 
 .hs_item-name {
@@ -252,6 +279,7 @@ nav>ul>li>button:hover {
 .hs_item-name .hs_item-number {
     font-size: 18px;
     font-weight: 700;
+    text-align: left;
 }
 
 .hero-services_item svg, 
@@ -262,4 +290,5 @@ nav>ul>li>button:hover {
 
 .hero-services_item a button:hover {
     color: #3d60dd;
+    height: 90px;
 }
