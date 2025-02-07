@@ -19,10 +19,10 @@ header {
     top: 0;
 }
 
-body, 
-input, 
-button, 
-h1, 
+body,
+input,
+button,
+h1,
 h2,
 h3 {
     font-family: 'Inter', sans-serif;
@@ -30,7 +30,9 @@ h3 {
     font-weight: normal;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 700;
 }
 
@@ -42,6 +44,22 @@ input {
     display: none;
 }
 
+.before-header {
+    display: flex;
+    gap: 6px;
+    background-color: #384c92;
+    color: #e0e0e0;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 14px;
+    justify-content: center;
+}
+
+.before-header a {
+    text-decoration: none;
+    color: #9bc6ff;
+}
+
 body>header {
     display: flex;
     align-items: center;
@@ -51,6 +69,7 @@ body>header {
     color: #333;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
     border-bottom: 1px solid #ececec;
+    z-index: 2;
 }
 
 body>header>nav>a>img {
@@ -76,6 +95,7 @@ body>header>nav>a>img {
     cursor: pointer;
     padding: 10px;
     border-radius: 9px;
+    min-width: 72px;
 }
 
 .login-btns button:hover {
@@ -93,6 +113,32 @@ body>header>nav>a>img {
     background-color: #0d4ef0;
     border: none;
     color: #fff;
+}
+
+.scnd-menu {
+    display: none;
+    position: sticky;
+    top: 61px;
+    z-index: 1;
+    justify-content: center;
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    transform: translateY(-56px);
+    transition: all 0.2s;
+}
+
+#extra-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#extra-menu li button {
+    background-color: #f1f1f1;
+}
+
+#extra-menu li button:hover {
+    background-color: #e0e0e0;
 }
 
 nav {
@@ -129,6 +175,12 @@ nav>ul>li>button:hover {
     background-color: #f1f1f1;
 }
 
+.search-bar {
+    width: 230px;
+    transition: all 0.2s;
+    margin-left: 16px;
+}
+
 .search-bar form {
     display: flex;
     align-items: center;
@@ -163,6 +215,7 @@ nav>ul>li>button:hover {
     background-color: #f1f1f1;
     max-height: 30px;
     height: 100%;
+    width: 100%;
 }
 
 .search-bar input:focus {
@@ -263,13 +316,15 @@ nav>ul>li>button:hover {
     display: flex;
     margin-top: 48px;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .hero-services_item a {
     text-decoration: none;
 }
 
-.hero-services_item a button{
+.hero-services_item a button {
     display: flex;
     align-items: center;
     border: none;
@@ -296,8 +351,8 @@ nav>ul>li>button:hover {
     text-align: left;
 }
 
-.hero-services_item svg, 
-.hs_item-number, 
+.hero-services_item svg,
+.hs_item-number,
 .right-sign {
     color: #333;
 }
@@ -342,7 +397,7 @@ nav>ul>li>button:hover {
 
 .game-item {
     display: inline-block;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     max-width: 170px;
     transition: all 0.2s;
 }
@@ -360,9 +415,31 @@ nav>ul>li>button:hover {
     text-align: left;
     color: #333;
     font-weight: 600;
-    margin-top: 8px;
+    margin-top: 7px;
 }
 
 .game-item:hover {
     transform: scale(1.04);
+}
+
+@media screen and (max-width: 1070px) {
+
+    .scnd-menu {
+        display: flex;
+    }
+
+    .search-bar {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+
+    #nav-menu {
+        display: none;
+    }
+
+    .scnd-menu {
+        transform: translateY(0px);
+    }
 }
