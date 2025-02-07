@@ -49,10 +49,14 @@ input {
     gap: 6px;
     background-color: #384c92;
     color: #ececec;
-    padding: 10px 0;
+    padding: 8px 20px;
     width: 100%;
     font-size: 14px;
     justify-content: center;
+}
+
+.before-header p {
+    margin-bottom: 2px;
 }
 
 .before-header a {
@@ -444,4 +448,60 @@ nav>ul>li>button:hover {
     .scnd-menu {
         transform: translateY(-1px);
     }
+}
+
+@media screen and (max-width: 560px) {
+
+    .scnd-nav .search-bar {
+        display: none;
+    }
+
+    .hero-container h1 {
+        font-size: 28px;
+    }
+
+    .hero-container h2 {
+        font-size: 20px;
+    }
+
+    .hero-search form {
+        width: 100%;
+    }
+
+    .hero-search ::after {
+        display: none;
+    }
+
+    .hero-search form button {
+        width: 60px;
+    }
+
+    .hero-services_item a button {
+        width: 150px;
+    }
+
+    .hero-services_item a button svg {
+        width: 20px;
+    }
+
+    .hero-services_item a button .hs_item-number {
+        font-size: 16px;
+    }
+
+    .games-container {
+        padding: 60px 20px 0px;
+    }
+
+    .section-title a {
+        font-size: 14px;
+    }
+
+    .game-item {
+        max-width: 150px;
+    }
+
+    .game-item-name {
+        font-size: 14px;
+    }
+    
 }
