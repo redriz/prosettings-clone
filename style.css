@@ -317,8 +317,10 @@ nav>ul>li>button:hover {
 }
 
 .hero-services {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin-top: 48px;
     gap: 20px;
     width: 100%;
@@ -328,6 +330,10 @@ nav>ul>li>button:hover {
     text-decoration: none;
 }
 
+.hero-services_item {
+    width: auto;
+}
+
 .hero-services_item a button {
     display: flex;
     align-items: center;
@@ -335,12 +341,12 @@ nav>ul>li>button:hover {
     border: none;
     border-radius: 9px;
     padding: 20px;
-    gap: 20px;
+    gap: 10px;
     color: #727272;
     cursor: pointer;
     transition: all 0.2s;
-    min-width: 170px;
     width: 100%;
+    min-width: 170px;
 }
 
 .hero-services_item a button>svg {
@@ -402,8 +408,9 @@ nav>ul>li>button:hover {
 }
 
 .games-list-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 20px;
     width: 100%;
 }
