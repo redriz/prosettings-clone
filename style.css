@@ -334,6 +334,7 @@ nav>ul>li>button:hover {
     color: #727272;
     cursor: pointer;
     transition: all 0.2s;
+    width: 170px;
 }
 
 .hs_item-name {
@@ -359,6 +360,7 @@ nav>ul>li>button:hover {
 
 .hero-services_item a button:hover {
     color: #3d60dd;
+    transform: scale(1.04);
 }
 
 .games-container {
@@ -440,6 +442,6 @@ nav>ul>li>button:hover {
     }
 
     .scnd-menu {
-        transform: translateY(0px);
+        transform: translateY(-1px);
     }
 }
