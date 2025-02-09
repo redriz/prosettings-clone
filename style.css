@@ -73,12 +73,17 @@ body>header {
     color: #333;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
     border-bottom: 1px solid #ececec;
-    z-index: 2;
+    z-index: 10;
 }
 
 body>header>nav>a>img {
     padding-top: 5px;
     width: 170px;
+}
+
+#nav-menu a, 
+#extra-menu a {
+    font-size: 14px;
 }
 
 .scnd-nav {
@@ -123,9 +128,11 @@ body>header>nav>a>img {
     display: none;
     position: sticky;
     top: 61px;
-    z-index: 1;
+    z-index: 9;
     justify-content: center;
     background-color: #f1f1f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #e9e9e9;
     padding: 10px 0;
     transform: translateY(-56px);
     transition: all 0.2s;
@@ -415,6 +422,10 @@ nav>ul>li>button:hover {
     width: 100%;
 }
 
+.games-list {
+    margin-top: 24px;
+}
+
 .game-item {
     display: inline-block;
     margin-bottom: 16px;
@@ -442,6 +453,58 @@ nav>ul>li>button:hover {
     }
 }
 
+.players-list {
+    margin: 36px 0;
+    padding-top: 72px;
+    border-top: 1px solid #e0e0e0;
+    margin-bottom: 80px;
+}
+
+.players-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 24px;
+    width: 100%;
+}
+
+.player-item {
+    display: block;
+    max-width: 210px;
+    height: auto;
+    padding: 18px;
+    border: 1px solid #f1f1f1;
+    border-radius: 12px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);;
+}
+
+.player-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.player-item-img img {
+    height: 170px;
+    width: auto;
+    border-radius: 50%;
+    background-color: #e9e9e9;
+}
+
+.player-item-name {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* ---------------- CSS Responsivo ----------------- */
+
 @media screen and (max-width: 1070px) {
 
     .scnd-menu {
@@ -461,6 +524,7 @@ nav>ul>li>button:hover {
 
     .scnd-menu {
         transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
     }
 
     #search-hero {
