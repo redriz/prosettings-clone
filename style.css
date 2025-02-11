@@ -355,6 +355,7 @@ nav>ul>li>button:hover {
     transition: all 0.2s;
     width: 100%;
     min-width: 170px;
+    will-change: transform;
 }
 
 .hero-services_item a button>svg {
@@ -381,11 +382,19 @@ nav>ul>li>button:hover {
 .hs_item-number,
 .right-sign {
     color: #333;
+    transition: all 0.2s;
+    transform: none;
 }
 
 .hero-services_item a button:hover {
     color: #3d60dd;
+    background-color: #e7e7e7;
     transform: scale(1.04);
+
+    .right-sign {
+        transform: translateX(4px);
+    }
+
 }
 
 .games-container {
@@ -446,11 +455,24 @@ nav>ul>li>button:hover {
     border-radius: 9px;
 }
 
+.game-item-name {
+    margin-top: 6px;
+}
+
+.game-item-img {
+    transition: all 0.2s;
+}
+
 .game-item:hover {
-    transform: scale(1.04);
+
+    .game-item-img {
+        transform: scale(1.03);
+    }
+
     .game-item-name {
         color: #3d60dd;
     }
+
 }
 
 .players-list {
