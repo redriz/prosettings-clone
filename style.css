@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background-color: #fcfcfc;
+    background-color: #f8f8f8;
 }
 
 header {
@@ -356,6 +356,7 @@ nav>ul>li>button:hover {
     width: 100%;
     min-width: 170px;
     will-change: transform;
+    overflow: hidden;
 }
 
 .hero-services_item a button>svg {
@@ -519,9 +520,62 @@ nav>ul>li>button:hover {
     text-align: center;
 }
 
+footer {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
 
+.footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 60px;
+    max-width: 1800px;
+    margin-top: 40px;
+    height: 280px;
+    font-size: 14px;
+}
 
+.prosettings-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 100%;
+    margin-right: 60px;
+}
 
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+    width: 250px;
+    height: 100%;
+}
+
+.footer-list a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-list li {
+    margin-bottom: 6px;
+}
+
+.footer-list-title {
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.prosettings-copy {
+    height: 100%;
+    width: 250px;
+}
 
 
 
