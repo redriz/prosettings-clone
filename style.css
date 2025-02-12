@@ -8,10 +8,12 @@
 
 html {
     scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
 }
 
 body {
     background-color: #f8f8f8;
+    text-wrap: pretty;
 }
 
 header {
@@ -525,59 +527,73 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 100px;
+    padding: 100px 20px 80px;
+    font-size: 14px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
 }
 
 .footer {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 60px;
-    max-width: 1800px;
-    margin-top: 40px;
-    height: 280px;
-    font-size: 14px;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    gap: 0 100px;
+    width: 100%;
+    max-width: 1670px;
+    margin: 0 auto;
+}
+
+.footer h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .prosettings-logo {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 300px;
-    height: 100%;
-    margin-right: 60px;
 }
 
-.footer-list {
+.prosettings-logo img {
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+.social-media-footer {
+    margin-top: 94px;
     display: flex;
-    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-list-main {
+    display: flex;
+    justify-content: space-between;
     align-items: flex-start;
-    padding: 0 20px;
-    width: 250px;
-    height: 100%;
 }
 
-.footer-list a {
-    text-decoration: none;
-    color: #333;
+.footer-list ul {
+    list-style: none;
 }
 
-.footer-list li {
-    margin-bottom: 6px;
+.footer-list>li{
+    padding-right: 20px;
+    display: block;
 }
 
-.footer-list-title {
-    font-weight: 700;
+.footer-list-content {
+    padding: 0;
+}
+
+.footer-list-content li {
     margin-bottom: 12px;
-    font-size: 16px;
 }
 
-.prosettings-copy {
-    height: 100%;
-    width: 250px;
+.prosettings-copy p {
+    margin-bottom: 20px;
+    font-size: 12px;
 }
-
-
 
 /* ---------------- CSS Responsivo ----------------- */
 
@@ -589,6 +605,24 @@ footer {
 
     .search-bar {
         width: 150px;
+    }
+
+    .prosettings-logo {
+        grid-column-start: -1;
+        grid-column-end: 1;
+        margin-bottom: 60px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-media-footer {
+        margin-top: 40px;
+        justify-content: center;
+    }
+
+    .footer-list-main {
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 }
 
