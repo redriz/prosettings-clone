@@ -545,6 +545,14 @@ footer a {
     margin: 0 auto;
 }
 
+footer li a {
+    color: #333;
+}
+
+footer li a:hover {
+    color: #3d60dd;
+}
+
 .footer h3 {
     font-size: 16px;
     font-weight: 600;
@@ -588,6 +596,7 @@ footer a {
 
 .footer-list-content li {
     margin-bottom: 12px;
+    text-align: left;
 }
 
 .prosettings-copy p {
@@ -651,7 +660,7 @@ footer a {
     }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 750px) {
 
     .scnd-nav .search-bar {
         display: none;
@@ -703,5 +712,64 @@ footer a {
 
     .game-item-name {
         font-size: 14px;
+    }
+
+    .players-list {
+        padding-top: 60px;
+    }
+
+    .player-item {
+        max-width: 180px;
+    }
+
+    .player-item-img img {
+        height: 150px;
+    }
+
+    .player-item-name {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 60px 20px 40px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer h3 {
+        text-align: left;
+    }
+
+    .footer-list-main {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-list>li {
+        padding-right: 0;
+    }
+
+    .footer-list-content {
+        padding: 0 20px 0 0;
+    }
+
+    .footer-list-content li {
+        margin-bottom: 10px;
+    }
+
+    .prosettings-logo img {
+        max-width: 200px;
+    }
+
+    .social-media-footer {
+        margin-top: 40px;
+        justify-content: center;
+    }
+
+    .prosettings-copy p {
+        font-size: 10px;
     }
 }
