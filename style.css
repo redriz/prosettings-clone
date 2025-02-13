@@ -736,7 +736,7 @@ footer li a:hover {
 
     .footer {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 40px 0;
     }
 
     .footer h3 {
