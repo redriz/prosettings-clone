@@ -575,6 +575,20 @@ footer li a:hover {
     gap: 20px;
 }
 
+.social-media-footer a {
+    text-decoration: none;
+    color: #999;
+    transition: all 0.2s;
+}
+
+.social-media-footer a:hover {
+    color: #3d60dd;
+}
+
+.social-media-footer a svg {
+    height: 19px;
+}
+
 .footer-list-main {
     display: flex;
     justify-content: space-between;
