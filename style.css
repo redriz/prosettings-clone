@@ -197,6 +197,7 @@ nav>ul>li>a:hover {
   justify-content: center;
   align-items: center;
   height: 600px;
+  padding: 20px;
 }
 
 .error-404 h1 {
@@ -254,6 +255,17 @@ nav>ul>li>a:hover {
 
 .scnd-nav .search-bar button svg {
   padding: 2px;
+}
+
+.error-404 h1,
+.error-404 p {
+  text-align: center;
+}
+
+.error-404 p {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
 }
 
 .search-bar button:hover {
@@ -753,6 +765,12 @@ footer li a:hover {
 @media screen and (max-width: 750px) {
   .scnd-nav .search-bar {
     display: none;
+  }
+
+  .error-404 p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
   }
 
   .hero-container h1 {
