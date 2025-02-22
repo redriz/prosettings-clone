@@ -527,14 +527,16 @@ nav>ul>li>a:hover {
 }
 
 .players-list,
-.teams-list {
+.teams-list,
+.guides-list {
   margin: 36px 0;
   padding-top: 72px;
   border-top: 1px solid #e0e0e0;
 }
 
 .players-list-container,
-.teams-list-container {
+.teams-list-container,
+.guides-list-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -644,6 +646,54 @@ nav>ul>li>a:hover {
   }
 }
 
+.game-selector {
+  margin-top: 40px;
+}
+
+.game-selector-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.game-selector-form label {
+  margin-top: 4px;
+}
+
+.game-selector-form input {
+  display: none;
+}
+
+.selected-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #3b3b3b;
+  padding: 4px 16px;
+  border: solid 1px #d4d4d4;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.selected-btn svg {
+  height: 24px;
+  width: 24px;
+}
+
+.selected-btn:hover {
+  color: #3d60dd;
+  border: solid 1px #3d60dd;
+}
+
+input:checked+.selected-btn {
+  background-color: #3d60dd;
+  border: solid 1px #3d60dd;
+  color: #fff;
+}
 
 footer {
   background-color: #fff;
