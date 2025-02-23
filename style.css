@@ -671,11 +671,13 @@ nav>ul>li>a:hover {
   justify-content: center;
   gap: 10px;
   color: #3b3b3b;
-  padding: 4px 16px;
+  padding: 8px 16px;
   border: solid 1px #d4d4d4;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 500;
+  font-size: 16px;
+  user-select: none;
   transition: all 0.2s;
 }
 
@@ -693,6 +695,51 @@ input:checked+.selected-btn {
   background-color: #3d60dd;
   border: solid 1px #3d60dd;
   color: #fff;
+}
+
+.guide-item a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #333;
+  font-size: 0;
+  transition: all 0.2s;
+}
+
+.guide-item-img img {
+  width: 290px;
+  border-radius: 9px 9px 0 0;
+}
+
+.guide-item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 290px;
+  height: auto;
+  padding: 18px;
+  background-color: #fdfdfd;
+  border: 1px solid #f1f1f1;
+  border-top: 0;
+  border-radius: 0 0 9px 9px;
+  font-size: initial;
+}
+
+.guide-item-text h3 {
+  transition: all 0.2s;
+}
+
+.guide-item-text p {
+  font-size: 14px;
+  color: #808080;
+}
+
+.guide-item a:hover {
+  transform: scale(1.03);
+
+  .guide-item-text h3 {
+    color: #0d4ef0;
+  }
 }
 
 footer {
@@ -872,12 +919,18 @@ footer li a:hover {
     display: none;
   }
 
+  .hero-services {
+    gap: 10px;
+  }
+
   .hero-search form button {
     width: 60px;
   }
 
   .hero-services_item a button {
     width: 150px;
+    padding: 10px;
+    gap: 5px;
   }
 
   .hero-services_item a button svg {
@@ -896,6 +949,10 @@ footer li a:hover {
     font-size: 14px;
   }
 
+  .games-list-container {
+    gap: 10px;
+  }
+
   .game-item {
     max-width: 150px;
   }
@@ -908,21 +965,25 @@ footer li a:hover {
     padding-top: 60px;
   }
 
+  .players-list-container {
+    gap: 10px;
+  }
+
   .player-item {
-    max-width: 180px;
+    max-width: 150px;
   }
 
   .player-item-img img {
-    height: 150px;
+    height: 120px;
   }
 
   .team-item-img {
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
   }
 
   .team-item-img img {
-    height: 80px;
+    height: 50px;
   }
 
   .player-item-name,
@@ -935,6 +996,24 @@ footer li a:hover {
   }
 
   .team-player p {
+    font-size: 12px;
+  }
+
+  .guide-item-img img {
+    width: 100%;
+    border-radius: 9px 9px 0 0;
+  }
+
+  .guide-item-text {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .guide-item-text h3 {
+    font-size: 18px;
+  }
+
+  .guide-item-text p {
     font-size: 12px;
   }
 
