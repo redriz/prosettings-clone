@@ -530,7 +530,8 @@ nav>ul>li>a:hover {
 
 .players-list,
 .teams-list,
-.guides-list {
+.guides-list,
+.brands-list {
   margin: 36px 0;
   padding-top: 72px;
   border-top: 1px solid #e0e0e0;
@@ -542,9 +543,9 @@ nav>ul>li>a:hover {
 .brands-list-container {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: space-evenly;
   gap: 24px;
-  width: 100%;
 }
 
 .player-item,
@@ -589,9 +590,12 @@ nav>ul>li>a:hover {
   justify-content: center;
 }
 
-.team-item-img img,
-.brand-item-img img {
+.team-item-img img {
   height: 100px;
+}
+
+.brand-item-img img {
+  height: 80px;
 }
 
 .player-item-name,
@@ -904,8 +908,16 @@ footer li a:hover {
 }
 
 @media screen and (max-width: 750px) {
+  .before-header p {
+    font-size: 12px;
+  }
+
   .scnd-nav .search-bar {
     display: none;
+  }
+
+  #extra-menu {
+    gap: 8px;
   }
 
   .error-404 p {
@@ -976,10 +988,6 @@ footer li a:hover {
     padding-top: 60px;
   }
 
-  .players-list-container {
-    gap: 10px;
-  }
-
   .player-item {
     max-width: 150px;
   }
@@ -988,7 +996,8 @@ footer li a:hover {
     height: 120px;
   }
 
-  .team-item-img {
+  .team-item-img,
+  .brand-item-img {
     height: 120px;
     width: 120px;
   }
@@ -998,7 +1007,8 @@ footer li a:hover {
   }
 
   .player-item-name,
-  .team-item-name {
+  .team-item-name,
+  .brand-item-name {
     font-size: 16px;
   }
 
@@ -1007,7 +1017,7 @@ footer li a:hover {
   }
 
   .team-player p {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .guide-item-img img {
