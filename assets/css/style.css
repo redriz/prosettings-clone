@@ -114,13 +114,13 @@ body>header>nav>a>img {
   color: #3d60dd;
 }
 
-.login-btns>.signup-btn {
+.login-btns>a>.signup-btn {
   background-color: #4c6de6;
   color: #fff;
   border: none;
 }
 
-.login-btns>.signup-btn:hover {
+.login-btns>a>.signup-btn:hover {
   background-color: #0d4ef0;
   border: none;
   color: #fff;
